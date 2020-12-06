@@ -2,4 +2,4 @@
 24 days of java script challenge from scrimba.com
 #Day1 
 
-![](/Day1.png)
+![](Js-Scrimba-Challenge/Day1/Day1.png)
