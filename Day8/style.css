@@ -1,30 +1,43 @@
 body {
     background-color: #AEB8FE;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100vh;
     
 }
-.first-face {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#title{
+    font-family: "Gill Sans", sans-serif;
+    color: #EDC;
+    margin-bottom: 15px;
+}
+
+#counter{
+    font-family: "Gill Sans", sans-serif;
+     margin-top: 15px;
+    font-size: 45px;
+    font-weight: 600;
+    color: #EFE5DC
 }
 #dice {
     width: 90px;
     height: 90px;
     border-radius: 10px;
     background-color: #EFE5DC;
+    justify-content: center;
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
-   
     cursor: pointer;
-    flex-wrap: wrap;
+   
 }
 
 .dot {
     display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
     background-color:black;
     margin: 10px;
 }
@@ -52,19 +65,19 @@ body {
     margin: 5px 10px;
 }
 /* FIVE */
-#dice[dots-counter='3'] .container {
+#dice[dots-counter='5'] .container {
     width: 50%;
     display: flex;
 }
-#dice[dots-counter='3'] .container:nth-child(3){
+#dice[dots-counter='5'] .container:nth-child(3){
        width: 100%;
      justify-content: center;
 }
-#dice[dots-counter='3'] .container:nth-child(2){
+#dice[dots-counter='5'] .container:nth-child(2){
       
      justify-content: flex-end;
 }
-#dice[dots-counter='3'] .container:nth-child(5){
+#dice[dots-counter='5'] .container:nth-child(5){
       
      justify-content: flex-end;
 }
