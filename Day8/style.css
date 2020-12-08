@@ -1,0 +1,78 @@
+body {
+    background-color: #AEB8FE;
+    display: flex;
+    
+}
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dice {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #EFE5DC;
+    display: flex;
+    align-items: center;
+   
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.dot {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color:black;
+    margin: 10px;
+}
+/* TWO */
+#dice[dots-counter='2'] .container {
+    width: 100%;
+    display: flex; 
+}
+#dice[dots-counter='2'] .container:nth-child(2) {
+     justify-content: flex-end;
+}
+/* THREE */
+#dice[dots-counter='3'] .container {
+    width: 100%;
+    display: flex;
+}
+
+#dice[dots-counter='3'] .container:nth-child(2){
+     justify-content: center;
+}
+#dice[dots-counter='3'] .container:nth-child(3){
+     justify-content: flex-end;
+}
+#dice[dots-counter='3'] .dot {
+    margin: 5px 10px;
+}
+/* FIVE */
+#dice[dots-counter='3'] .container {
+    width: 50%;
+    display: flex;
+}
+#dice[dots-counter='3'] .container:nth-child(3){
+       width: 100%;
+     justify-content: center;
+}
+#dice[dots-counter='3'] .container:nth-child(2){
+      
+     justify-content: flex-end;
+}
+#dice[dots-counter='3'] .container:nth-child(5){
+      
+     justify-content: flex-end;
+}
+
+#dice[dots-counter='5'] .dot {
+    margin: 5px 10px;
+}
+/* SIX */
+#dice[dots-counter='6'] .dot {
+    margin: 5px 10px;
+}
